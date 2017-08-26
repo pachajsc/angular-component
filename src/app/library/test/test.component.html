@@ -1,0 +1,10 @@
+<h2>Heros</h2>
+	<ul>
+		<li *ngFor="let hero of heroes" [@myTrigger]="state" >
+			{{hero.name}}, {{hero.weapon}}
+		</li>
+	</ul>
+<button class="btn btn-primary" (click)="addItem()">+ Add</button>
+<hr>
+
+
